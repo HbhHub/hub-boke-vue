@@ -1,4 +1,4 @@
-1.编写routes.ts文件引入并使用路由
+01.编写routes.ts文件引入并使用路由
 
 ```tsx
 import Layout from "@/layout/index.vue";
