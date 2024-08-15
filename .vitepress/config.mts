@@ -31,6 +31,7 @@ export default defineConfig({
       "/boke/c++": set_sidebar("/boke/c++"),
       "/boke/mid": set_sidebar("/boke/mid"),
       "/boke/tools": set_sidebar("/boke/tools"),
+      "/boke/project": set_sidebar("/boke/project"),
     },
 
     // 设置搜索框的样式
