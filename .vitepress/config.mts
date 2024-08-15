@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 import { set_sidebar } from './utils/auto_sidebar.mjs'
 
 export default defineConfig({
+  base: '/hub-boke-vue/',
   head: [["link", { rel: "icon", href: "/logo.png" }]],
   title: "熊猫侠阿宝",
   description: "个人编程博客",
@@ -22,8 +23,6 @@ export default defineConfig({
     lightModeSwitchTitle: '切换日间模式',
     darkModeSwitchTitle: '切换夜间模式',
     externalLinkIcon: true,
-
-
 
     sidebar: {
       "/boke/vue": set_sidebar("/boke/vue"),
