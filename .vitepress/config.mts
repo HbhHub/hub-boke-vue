@@ -63,6 +63,7 @@ export default defineConfig({
     ],
 
     footer: {
+      message: '<a href="https://beian.miit.gov.cn/">湘ICP备2024058114号-1</a>',
       copyright: "Copyright @ 2024-present Hub"
     }
   }
