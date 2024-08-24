@@ -32,6 +32,7 @@ export default defineConfig({
       "/boke/mid": set_sidebar("/boke/mid"),
       "/boke/tools": set_sidebar("/boke/tools"),
       "/boke/project": set_sidebar("/boke/project"),
+      "/boke/video": set_sidebar("/boke/video"),
     },
 
     // 设置搜索框的样式
