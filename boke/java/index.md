@@ -1,6 +1,6 @@
 ##### java 基础思维导图
 
-<img src="images/java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%82%B9-17242872838451.png" alt="java基础知识点-17242872838451" style="zoom:67%;" />
+<img src="./images/java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%82%B9-17242872838451.png" alt="java基础知识点-17242872838451" style="zoom:67%;" />
 
 ##### spring 思维导图
 
