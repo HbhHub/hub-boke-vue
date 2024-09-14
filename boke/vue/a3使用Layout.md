@@ -137,3 +137,69 @@ body {
 }
 ```
 
+###### 使用anti-design-vue搭建layout
+
+```vue
+<template>
+  <a-layout>
+    <a-layout-sider :style="siderStyle">
+      <a-menu theme="dark" mode="inline">
+        <a-menu-item key="1">
+          <user-outlined />
+          <span class="nav-text">nav 1</span>
+        </a-menu-item>
+        <a-menu-item key="2">
+          <video-camera-outlined />
+          <span class="nav-text">nav 2</span>
+        </a-menu-item>
+        <a-menu-item key="3">
+          <upload-outlined />
+          <span class="nav-text">nav 3</span>
+        </a-menu-item>
+        <a-menu-item key="4">
+          <user-outlined />
+          <span class="nav-text">nav 4</span>
+        </a-menu-item>
+      </a-menu>
+    </a-layout-sider>
+    <a-layout>
+      <a-layout-header :style="headerStyle">MRO后台管理系统</a-layout-header>
+      <a-layout-content :style="contentStyle">
+        <router-view />
+      </a-layout-content>
+      <a-layout-footer :style="footerStyle"
+        >Manst Mro ©2024 Created by SZXXYJY</a-layout-footer
+      >
+    </a-layout>
+  </a-layout>
+</template>
+
+<script setup lang="ts">
+import type { CSSProperties } from 'vue'
+const headerStyle: CSSProperties = {
+  height: '60px',
+  width: '100vw- 200px',
+  background: '#fff',
+  textAlign: 'center',
+  lineHeight: '60px',
+}
+
+const contentStyle: CSSProperties = {
+  height: '100vh - 120px',
+  width: '100vw- 200px',
+}
+
+const siderStyle: CSSProperties = {
+  height: '100vh',
+  width: '200px',
+}
+
+const footerStyle: CSSProperties = {
+  width: '100vw- 200px',
+  height: '60px',
+  textAlign: 'center',
+}
+</script>
+<style lang="scss" scoped></style>
+```
+
