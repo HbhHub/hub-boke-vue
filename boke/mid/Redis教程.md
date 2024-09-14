@@ -1,3 +1,5 @@
+
+
 ###### 常用命令
 
 [命令 |文档 (redis.io)](https://redis.io/docs/latest/commands/)
@@ -26,13 +28,39 @@ help @xx类型
 
 ###### redisTemplate
 
+```xml
+<!--SpringBoot与Redis整合依赖-->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-redis</artifactId>
+</dependency>
+
 ```
+
+###### 单机yml
+
+```yaml
+redis:
+    host: 192.168.134.100
+    port: 6379
+    database: 0
+    timeout: 1800000
+    password: 123321
+    lettuce:
+      pool:
+        max-active: 20 #最大连接数
+        max-wait: -1    #最大阻塞等待时间(负数表示没限制)
+        max-idle: 5    #最大空闲
+        min-idle: 0     #最小空闲
+```
+
+###### config
 
 ```
 
 ```
 
-```
+
 
 ###### 方式2Jedis
 
